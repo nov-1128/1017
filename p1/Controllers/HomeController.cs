@@ -26,5 +26,16 @@ namespace p1.Controllers
 
             return View();
         }
+        public ActionResult hello()
+        {
+            int a = 11;
+            int sum = 0;
+            for (int i = 1; i <= a; i++)
+            {
+                sum += i;
+            }
+            ViewBag.sum = sum;
+            return View();
+        }
     }
 }
